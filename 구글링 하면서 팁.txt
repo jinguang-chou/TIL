@@ -1,0 +1,18 @@
+- 궁금한 것들을 검색해보면 됩니다. 기술(도구 이름) + 단어 조합으로 하면 훨씬 더 좋은 검색 결과를 얻을 수 있어요. 
+예.  `sourcetree branch`
+
+- 검색어 팁
+    - 아래처럼 검색어를 조합해 입력해보세요!
+
+    - 기술을 처음 배우고 싶을 때 :  '기술이름' +  'tutorial' (예.  `git tutorial`)
+
+    - 기능을 찾을 때 : '기술이름' + 'how to' + '찾을 내용' (예. `git how to merge` )
+
+    - 어떻게 사용하는지 예제를 보고 싶을 때 : '기술이름' + '내용' + 'example' (예. `github flow example`)
+
+    - 원하는 사이트명 포함해 검색할 수도 있습니다. (예: `stackoverflow git merge` - stackoverflow 라는 사이트에서 검색)
+
+# stackoverflow - 개발 QnA 사이트입니다. 전 세계적으로 많이 쓰입니다. 
+질문과 답변, 댓글에 사용자들이 vote 할 수 있어요. 좋은 질문과 답변에는 vote 수가 높습니다. 
+
+# 신뢰할 수 있는 블로그
