@@ -1,0 +1,36 @@
+#pymongo 기본 코드 (권한 제한으로 certifi 페키지 사용 )
+//certifi를 안쓰면 관련 두줄 삭제 
+from pymongo import MongoClient
+import certifi 
+
+ca = certifi.where()
+
+client = MongoClient('mongodb+srv://test:sparta@cluster0.4lllimc.mongodb.net/cluster0?retryWrites=true&w=majority', tlsCAFile=ca)
+db = client.dbsparta
+//dbsparta는 db의 서버의 이름이다.(바꿔도 된다.)
+
+# 사용 매뉴 코드들~~~
+from pymongo import MongoClient
+import certifi
+
+ca = certifi.where()
+
+client = MongoClient('mongodb+srv://test:sparta@cluster0.4lllimc.mongodb.net/cluster0?retryWrites=true&w=majority', tlsCAFile=ca)
+db = client.dbsparta
+# 사용 매뉴 코드들~~~ users는 DB에 저장될 이름이자. 찾을 이름 (바꾸면 된다.)
+# 저장 - 예시
+doc = {'name':'bobby','age':21}
+db.users.insert_one(doc)
+
+# 한 개 찾기 - 예시
+user = db.users.find_one({'name':'bobby'})
+
+# 여러개 찾기 - 예시 ( _id 값은 제외하고 출력)
+all_users = list(db.users.find({},{'_id':False}))
+
+# 바꾸기 - 예시
+db.users.update_one({'name':'bobby'},{'$set':{'age':19}})
+
+# 지우기 - 예시
+db.users.delete_one({'name':'bobby'})
+
